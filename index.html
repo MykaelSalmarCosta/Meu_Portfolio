@@ -1,53 +1,265 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Mykael Salmar, profissional em formação contínua em desenvolvimento de software com foco em Back-End Java, projetos, estudos e evolução técnica.">
-<meta name="keywords" content="Java, Back-End, Spring Boot, Desenvolvimento de Software, Portfólio, Programação">
-  <title>Portfolio - Mykael Salmar</title>
+  <meta name="description"
+    content="Portfólio de Mykael Salmar, desenvolvedor em formação com foco em Java, Spring Boot e construção de projetos orientados a back-end.">
+  <meta name="keywords" content="Mykael Salmar, Java, Spring Boot, Back-End, API REST, Portfólio, Desenvolvedor">
+  <title>Mykael Salmar | Portfólio de Desenvolvedor</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <link id="favicon" rel="icon" type="image/jpg" href="assets/favicon-light.jpg">
+  <link rel="icon" type="image/jpg" href="assets/favicon-light.jpg">
 </head>
 
-<body>
-  <header class="cabecalho">
-    <nav class="cabecalho__menu">
-      <a class="cabecalho__menu__link active" href="index.html">Home</a>
-      <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-      <a class="cabecalho__menu__link" href="certificates.html">Certificados</a>
+<body class="site-body">
+  <div class="site-background" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand__mark">MS</span>
+      <span>Mykael Salmar</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a class="site-nav__link active" href="index.html">Início</a>
+      <a class="site-nav__link" href="#projetos">Projetos</a>
+      <a class="site-nav__link" href="about.html">Sobre</a>
+      <a class="site-nav__link" href="certificates.html">Certificados</a>
     </nav>
   </header>
-  <main class="apresentacao">
-    <section class="apresentacao__conteudo">
-     <h1 class="apresentacao__conteudo__titulo">
-  Construindo soluções digitais com
-  <strong class="titulo-destaque">organização, lógica e evolução constante</strong>
-</h1>
-      <p class="apresentacao__conteudo__texto">
-  Olá! Sou Mykael Salmar, profissional com experiência na área industrial e em formação contínua
-  em desenvolvimento de software. Atualmente estudo e desenvolvo projetos com foco em
-  Back-End Java, aplicando raciocínio lógico, organização e visão de processos na construção
-  de soluções técnicas.
-</p>
-      <div class="apresentacao__links">
-        <h2 class="apresentacao__links__subtitulo">Conheça meu trabalho e trajetória:</h2>
-        <a class="apresentacao__links__navegacao" href="https://instagram.com/mykael.salmarcosta" target="_blank" rel="noopener noreferrer">
-          <img src="assets/instagram.jpg" alt="icone do Instagram">
-          Instagram
-        </a>
-        <a class="apresentacao__links__navegacao" href="https://github.com/MykaelSalmarCosta" target="_blank" rel="noopener noreferrer">
-          <img src="assets/github.jpg" alt="icone do Github">
-          Github
-        </a>
+
+  <main>
+    <section class="section hero">
+      <div class="hero__content">
+        <p class="eyebrow">Back-end Java • APIs REST • Evolução contínua</p>
+        <h1 class="hero__title">Projetos, processo e código com cara de portfólio de desenvolvedor.</h1>
+        <p class="hero__lead">
+          Sou Mykael Salmar e estou construindo minha trajetória em desenvolvimento de software com foco em Java e
+          Spring Boot. Este portfólio foi organizado para mostrar como eu penso, estudo e transformo aprendizado em
+          projetos práticos.
+        </p>
+
+        <div class="hero__actions">
+          <a class="button button--primary" href="#projetos">Ver projetos</a>
+          <a class="button button--secondary" href="https://github.com/MykaelSalmarCosta" target="_blank"
+            rel="noopener noreferrer">Acessar GitHub</a>
+        </div>
+
+        <div class="stats-grid" aria-label="Resumo profissional">
+          <article class="stat-card">
+            <strong>Java</strong>
+            <span>Base atual de estudo e construção de APIs.</span>
+          </article>
+          <article class="stat-card">
+            <strong>Spring Boot</strong>
+            <span>Foco em arquitetura, persistência e endpoints REST.</span>
+          </article>
+          <article class="stat-card">
+            <strong>Projetos</strong>
+            <span>Portfólio orientado a prática, organização e evolução técnica.</span>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero__panel">
+        <div class="portrait-card">
+          <img class="portrait-card__image" src="assets/MykaelSalmar.jpg" alt="Foto de Mykael Salmar">
+          <div class="portrait-card__body">
+            <p class="portrait-card__title">Foco atual</p>
+            <p class="portrait-card__text">
+              Construção de soluções back-end com atenção a lógica, clareza de código e consistência de processo.
+            </p>
+          </div>
+        </div>
+
+        <div class="stack-preview">
+          <p class="stack-preview__title">Stack em evidência</p>
+          <div class="chip-group">
+            <span class="chip">Java</span>
+            <span class="chip">Spring Boot</span>
+            <span class="chip">APIs REST</span>
+            <span class="chip">Git & GitHub</span>
+            <span class="chip">SQL</span>
+            <span class="chip">HTML & CSS</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="section-heading">
+        <p class="eyebrow">Projetos em destaque</p>
+        <h2>Uma vitrine pensada para comunicar capacidade técnica</h2>
+        <p>
+          Em vez de apenas listar estudos, a home agora evidencia projetos, contexto e tecnologias para mostrar com
+          mais clareza o que estou construindo como desenvolvedor.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-card--featured">
+          <span class="card-kicker">Projeto back-end</span>
+          <h3>Challenge Fórum API</h3>
+          <p>
+            Projeto com foco em modelagem de uma API para fórum, trabalhando organização de camadas, persistência,
+            regras de negócio e construção de endpoints orientados a cenários reais.
+          </p>
+          <div class="chip-group">
+            <span class="chip chip--muted">Java</span>
+            <span class="chip chip--muted">Spring Boot</span>
+            <span class="chip chip--muted">CRUD</span>
+            <span class="chip chip--muted">Arquitetura em camadas</span>
+          </div>
+          <ul class="project-list">
+            <li>Estruturação de recursos e operações principais.</li>
+            <li>Organização pensando em manutenção e legibilidade.</li>
+            <li>Base para demonstrar evolução prática em back-end.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <span class="card-kicker">Projeto de estudo aplicado</span>
+          <h3>Serviços com Spring Boot 3</h3>
+          <p>
+            Conjunto de estudos orientados a aplicações Java modernas, explorando configuração de projeto, controllers,
+            persistência e boas práticas para APIs.
+          </p>
+          <div class="chip-group">
+            <span class="chip chip--muted">Spring Boot 3</span>
+            <span class="chip chip--muted">REST</span>
+            <span class="chip chip--muted">JPA</span>
+          </div>
+          <ul class="project-list">
+            <li>Aprendizado de estrutura e fluxo de uma aplicação web.</li>
+            <li>Conexão entre teoria e implementação de funcionalidades.</li>
+            <li>Fortalecimento de base para projetos maiores.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <span class="card-kicker">Projeto de presença digital</span>
+          <h3>Portfólio pessoal responsivo</h3>
+          <p>
+            Projeto voltado à apresentação profissional, com foco em hierarquia visual, clareza narrativa e espaço para
+            destacar projetos, stack e trajetória.
+          </p>
+          <div class="chip-group">
+            <span class="chip chip--muted">HTML</span>
+            <span class="chip chip--muted">CSS</span>
+            <span class="chip chip--muted">UI responsiva</span>
+          </div>
+          <ul class="project-list">
+            <li>Visual redesenhado para parecer uma vitrine de desenvolvedor.</li>
+            <li>Estrutura voltada a recrutadores e visitantes técnicos.</li>
+            <li>Base pronta para receber novos projetos e links reais.</li>
+          </ul>
+        </article>
       </div>
     </section>
-    <img class="foto-apresentacao" src="assets/MykaelSalmar.jpg" alt="foto do Mykael Salmar">
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Stack e forma de trabalho</p>
+        <h2>O que eu priorizo ao desenvolver</h2>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Tecnologias em foco</h3>
+          <p>
+            Minha formação está concentrada em Java e ecossistema Spring, com apoio de Git, GitHub, lógica de
+            programação e fundamentos de banco de dados.
+          </p>
+          <div class="chip-group">
+            <span class="chip">Java</span>
+            <span class="chip">Spring</span>
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">SQL</span>
+            <span class="chip">POO</span>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <h3>Como eu construo</h3>
+          <ul class="feature-list">
+            <li>Começo pela lógica e pelo entendimento do problema.</li>
+            <li>Organizo a solução para facilitar leitura e manutenção.</li>
+            <li>Uso projetos como prova prática de evolução contínua.</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h3>O que este portfólio quer comunicar</h3>
+          <p>
+            Mais do que cursos, quero mostrar direção profissional: estudo com constância, aplico o conteúdo em
+            projetos e venho construindo uma base sólida para atuar em software.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--journey">
+      <div class="section-heading">
+        <p class="eyebrow">Trajetória</p>
+        <h2>Da experiência em processos à construção de software</h2>
+      </div>
+
+      <div class="journey-grid">
+        <article class="journey-step">
+          <span class="journey-step__index">01</span>
+          <h3>Base profissional</h3>
+          <p>
+            Minha vivência na indústria fortaleceu disciplina, organização, senso de responsabilidade e visão de
+            processo.
+          </p>
+        </article>
+
+        <article class="journey-step">
+          <span class="journey-step__index">02</span>
+          <h3>Migração consciente</h3>
+          <p>
+            Entrei em tecnologia com foco em consistência: estudar fundamentos, entender o porquê das soluções e
+            praticar com regularidade.
+          </p>
+        </article>
+
+        <article class="journey-step">
+          <span class="journey-step__index">03</span>
+          <h3>Próximos passos</h3>
+          <p>
+            Expandir projetos, aprofundar Java e Spring Boot e transformar aprendizado em entregas cada vez mais
+            maduras.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="cta-card">
+        <div>
+          <p class="eyebrow">Próxima conversa</p>
+          <h2>Quer ver mais detalhes da minha trajetória e formação?</h2>
+          <p>
+            Você pode navegar pela página sobre mim, conferir certificados e acessar meu GitHub para acompanhar minha
+            evolução.
+          </p>
+        </div>
+
+        <div class="cta-card__actions">
+          <a class="button button--primary" href="about.html">Sobre mim</a>
+          <a class="button button--secondary" href="certificates.html">Certificados</a>
+          <a class="button button--ghost" href="https://github.com/MykaelSalmarCosta" target="_blank"
+            rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="rodape">
-    <p>Desenvolvido por Mykael Salmar</p>
+
+  <footer class="site-footer">
+    <p>Desenvolvido por Mykael Salmar.</p>
   </footer>
 </body>
 

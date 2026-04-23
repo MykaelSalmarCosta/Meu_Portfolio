@@ -1,54 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Confira os certificados de Mykael Salmar, com cursos de Lógica de Programação, Git e Gestão de Equipes.">
-  <title>Certificados</title>
+  <meta name="description"
+    content="Certificados de Mykael Salmar em desenvolvimento de software, com estudos em Java, Spring Boot, Git, lógica de programação e temas complementares.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificados | Mykael Salmar</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <link id="favicon" rel="icon" type="image/png" href="assets/favicon-light.png">
-  </head>
+  <link rel="icon" type="image/jpg" href="assets/favicon-light.jpg">
+</head>
 
-<body>
-  <header class="cabecalho">
-    <nav class="cabecalho__menu">
-      <a class="cabecalho__menu__link" href="index.html">Home</a>
-      <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-      <a class="cabecalho__menu__link active" href="certificates.html">Certificados</a>
+<body class="site-body">
+  <div class="site-background" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand__mark">MS</span>
+      <span>Mykael Salmar</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a class="site-nav__link" href="index.html">Início</a>
+      <a class="site-nav__link" href="index.html#projetos">Projetos</a>
+      <a class="site-nav__link" href="about.html">Sobre</a>
+      <a class="site-nav__link active" href="certificates.html">Certificados</a>
     </nav>
   </header>
-  <main class="apresentacao">
-    <section class="apresentacao__conteudo">
-      <h1 class="apresentacao__conteudo__titulo">
-        Meus certificados
-      </h1>
-      <p class="apresentacao__conteudo__texto">
-  Esta página reúne certificados de cursos concluídos ao longo da minha formação
-  em desenvolvimento de software. Os estudos refletem um processo contínuo de
-  aprendizado, com foco na construção de uma base sólida e evolução técnica
-  progressiva.
-      </p>
+
+  <main>
+    <section class="section page-hero">
+      <div class="page-hero__content">
+        <p class="eyebrow">Formação e aprendizado</p>
+        <h1>Certificados que reforçam a construção da minha base técnica.</h1>
+        <p>
+          Esta página reúne trilhas e cursos concluídos durante minha evolução em desenvolvimento de software. Mais do
+          que quantidade, os certificados ajudam a mostrar consistência, direção de estudo e aprofundamento gradual em
+          temas importantes para atuação como desenvolvedor.
+        </p>
+      </div>
+
+      <div class="stats-grid stats-grid--compact">
+        <article class="stat-card">
+          <strong>10</strong>
+          <span>certificados exibidos na galeria.</span>
+        </article>
+        <article class="stat-card">
+          <strong>Java + Spring</strong>
+          <span>como eixo principal de formação.</span>
+        </article>
+        <article class="stat-card">
+          <strong>Base complementar</strong>
+          <span>Git, lógica, gestão e desenvolvimento pessoal.</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Galeria</p>
+        <h2>Certificados que fazem parte da minha trajetória</h2>
+        <p>Clique em qualquer certificado para ampliar a visualização.</p>
+      </div>
 
       <div class="gallery">
-        <img src="assets/challenge-forum.jpg" alt="Certificado do desafio do fórum"></a>
-        <img src="assets/spring-boot-3.jpg" alt="Certificado do curso de Spring Boot 3"></a>
-        <img src="assets/java-oo-alura.jpg" alt="Certificado do curso de Java e Orientação a Objetos"></a>
-        <img src="assets/spring-boot-alura.jpg" alt="Certificado do curso de Spring Boot"></a>
-        <img src="assets/desenvolvimento-pessoal-alura.jpg" alt="Certificado do curso de Desenvolvimento Pessoal"></a>
-        <img src="assets/desenvolmento-alura.jpg" alt="Certificado do curso de Empreendedorismo, Agilidade e Protagonismo na Carreira"></a>
-        <img src="assets/iniciante-programacao-alura.jpg" alt="Certificado do curso de Iniciante em Programação"></a>
-        <img src="assets/git-github.jpg" alt="Certificado do curso de Git e GitHub"></a>
-        <img src="assets/gestao-equipes.jpg" alt="Certificado curso de Gestão de Equipes"></a>
-        <img src="assets/certificate-excel.jpg" alt="Certificado do curso avançado de excel"></a>
-
+        <figure class="certificate-card">
+          <img src="assets/challenge-forum.jpg" alt="Certificado do Challenge Fórum">
+          <figcaption>Challenge Fórum</figcaption>
+        </figure>
+        <figure class="certificate-card">
+          <img src="assets/spring-boot-3.jpg" alt="Certificado do curso de Spring Boot 3">
+          <figcaption>Spring Boot 3</figcaption>
+        </figure>
+        <figure class="certificate-card">
+          <img src="assets/java-oo-alura.jpg" alt="Certificado do curso de Java e Orientação a Objetos">
+          <figcaption>Java e Orientação a Objetos</figcaption>
+        </figure>
+        <figure class="certificate-card">
+          <img src="assets/spring-boot-alura.jpg" alt="Certificado do curso de Spring Boot">
+          <figcaption>Spring Boot</figcaption>
+        </figure>
+        <figure class="certificate-card">
+          <img src="assets/desenvolvimento-pessoal-alura.jpg" alt="Certificado de desenvolvimento pessoal">
+          <figcaption>Desenvolvimento Pessoal</figcaption>
+        </figure>
+        <figure class="certificate-card">
+          <img src="assets/desenvolmento-alura.jpg"
+            alt="Certificado de empreendedorismo, agilidade e protagonismo na carreira">
+          <figcaption>Empreendedorismo e Carreira</figcaption>
+        </figure>
+        <figure class="certificate-card">
+          <img src="assets/iniciante-programacao-alura.jpg" alt="Certificado da formação iniciante em programação">
+          <figcaption>Iniciante em Programação</figcaption>
+        </figure>
+        <figure class="certificate-card">
+          <img src="assets/git-github.jpg" alt="Certificado do curso de Git e GitHub">
+          <figcaption>Git e GitHub</figcaption>
+        </figure>
+        <figure class="certificate-card">
+          <img src="assets/gestao-equipes.jpg" alt="Certificado de gestão de equipes">
+          <figcaption>Gestão de Equipes</figcaption>
+        </figure>
+        <figure class="certificate-card">
+          <img src="assets/certificate-excel.jpg" alt="Certificado do curso avançado de Excel">
+          <figcaption>Excel Avançado</figcaption>
+        </figure>
       </div>
-    
-    
     </section>
   </main>
-  <footer class="rodape">
-    <p>Desenvolvido por Mykael Salmar</p>
+
+  <footer class="site-footer">
+    <p>Desenvolvido por Mykael Salmar.</p>
   </footer>
+
   <script src="lightbox.js"></script>
 </body>
 
