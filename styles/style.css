@@ -2,9 +2,7 @@
 
 :root {
   --bg: #07111f;
-  --bg-soft: rgba(10, 22, 39, 0.8);
   --surface: rgba(10, 23, 40, 0.78);
-  --surface-strong: rgba(15, 31, 52, 0.95);
   --surface-border: rgba(137, 187, 255, 0.18);
   --text: #f5f7fb;
   --text-soft: #b8c6dc;
@@ -14,7 +12,6 @@
   --shadow: 0 28px 60px rgba(0, 0, 0, 0.28);
   --radius-xl: 32px;
   --radius-lg: 24px;
-  --radius-md: 18px;
   --radius-sm: 999px;
   --container: 1180px;
   --font-display: "Space Grotesk", sans-serif;
@@ -219,7 +216,8 @@ main,
 }
 
 .hero__actions,
-.cta-card__actions {
+.cta-card__actions,
+.project-card__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -409,10 +407,12 @@ main,
 }
 
 .project-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   padding: 1.6rem;
 }
 
@@ -420,6 +420,10 @@ main,
   background:
     linear-gradient(180deg, rgba(114, 242, 192, 0.08), rgba(10, 23, 40, 0.78)),
     var(--surface);
+}
+
+.project-card__actions {
+  margin-top: auto;
 }
 
 .card-kicker {
@@ -472,7 +476,7 @@ main,
 }
 
 .journey-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .journey-step__index {
@@ -607,10 +611,7 @@ main,
   .project-grid,
   .info-grid,
   .journey-grid,
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
+  .gallery,
   .stats-grid {
     grid-template-columns: 1fr;
   }
